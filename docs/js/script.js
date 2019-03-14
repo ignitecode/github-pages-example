@@ -27,7 +27,7 @@ let search = function(value) {
   $container.empty();
 
   $.ajax({
-    url: `http://api.giphy.com/v1/gifs/search?q=${encodeURI(value)}&api_key=dc6zaTOxFJmzC`,
+    url: `https://api.giphy.com/v1/gifs/search?q=${encodeURI(value)}&api_key=dc6zaTOxFJmzC`,
     type: 'GET',
     dataType: 'json'
   }).done((response) => {
